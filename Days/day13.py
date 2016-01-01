@@ -1,6 +1,11 @@
 #function that arranges the list of guests to generate the most happiness
 def makeHappiness(relations, guestOrder, happiness):
     if len(guestOrder) == len(relations):
+        guestA = guestOrder[-1]
+        guestB = guestOrder[0]
+        happiness = happiness + relations[guestA][guestB] + relations[guestB][guestA]
+        #if happiness > 500:
+            #print(guestOrder, happiness)
         return (guestOrder, happiness)
 
     maxHappiness = -float("inf")
@@ -8,15 +13,22 @@ def makeHappiness(relations, guestOrder, happiness):
 
     if len(guestOrder) > 0:
         guestA = guestOrder[-1]
-        for guestB in relations[guest[A]]:
+        guestOrder.append("")
+        for guestB in relations[guestA]:
             if guestB not in guestOrder:
-                data = makeHappiness(relations, [guestOrder, guestB], happiness + relations[guestA][guestB])
+                guestOrder[-1] = guestB
+                data = makeHappiness(relations, list(guestOrder), happiness + relations[guestA][guestB] + relations[guestB][guestA])
                 if data[1] > maxHappiness:
                     maxHappiness = data[1]
                     maxOrder = data[0]
     else:
+        guestOrder.append("")
         for guestA in relations:
-            makeHappiness(relations, [guestA], happiness)
+            guestOrder[-1] = guestA
+            data = makeHappiness(relations, list(guestOrder), happiness)
+            if data[1] > maxHappiness:
+                maxHappiness = data[1]
+                maxOrder = data[0]
 
 
     return (maxOrder, maxHappiness)
@@ -50,10 +62,6 @@ for line in lines:
         happiness = -happiness
     relations[data[0]][data[10][:-1]] = happiness
 
-#makeHappiness(relations, [], 0)
-#print(relations)
-
-temp = [1, 2, 3]
-otherTemp = [temp, 4]
-print(temp)
-print(otherTemp)
+data = makeHappiness(relations, [], 0)
+print("ANSWER:")
+print(data[0], data[1])
