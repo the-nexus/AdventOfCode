@@ -1,6 +1,5 @@
 import sys
 
-
 def findEvenDividers(values):
     n_values = len(values)
     for i in range(n_values):
