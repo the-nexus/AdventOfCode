@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Utilities">
+      <UniqueIdentifier>{42a1edc6-e0bb-4382-9b74-e7cef3df8883}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utilities">
+      <UniqueIdentifier>{53d68dd4-274e-48e4-914f-b8b3e4283532}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2018">
+      <UniqueIdentifier>{ce31164c-e89e-4967-9974-1da91c647556}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2018\Day01">
+      <UniqueIdentifier>{f369ca5d-2ab0-493e-87d5-e5a2ca4c3072}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\2018">
+      <UniqueIdentifier>{873d7f48-bc97-4f16-98f1-a624c98c3eb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\2018\Day01">
+      <UniqueIdentifier>{8a5c2c7d-643d-4a29-8d17-0f0721621f2c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\2018\Day01\Day01_1.cpp">
+      <Filter>Source Files\2018\Day01</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\AOCHelper.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\2018\Day01\Day01_1.h">
+      <Filter>Header Files\2018\Day01</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\AOCHelper.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
