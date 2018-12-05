@@ -1,8 +1,8 @@
 #include <iostream>
 
 // Edit these to launch the proper program
-#include "../2018/day01/Day01_1.h"
-#define DayType Day01_1
+#include "../2018/day01/Day01_2.h"
+#define DayType Day01_2
 #define DayStr "../2018/Day01/Day01_input.txt"
 
 

@@ -42,6 +42,9 @@
     <ClCompile Include="..\Utilities\AOCHelper.cpp">
       <Filter>Source Files\Utilities</Filter>
     </ClCompile>
+    <ClCompile Include="..\2018\day01\Day01_2.cpp">
+      <Filter>Source Files\2018\Day01</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\2018\Day01\Day01_1.h">
@@ -49,6 +52,9 @@
     </ClInclude>
     <ClInclude Include="..\Utilities\AOCHelper.h">
       <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\2018\day01\Day01_2.h">
+      <Filter>Header Files\2018\Day01</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
