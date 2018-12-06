@@ -117,12 +117,16 @@
   <ItemGroup>
     <ClCompile Include="..\2018\Day01\Day01_1.cpp" />
     <ClCompile Include="..\2018\day01\Day01_2.cpp" />
+    <ClCompile Include="..\2018\day02\Day02_1.cpp" />
+    <ClCompile Include="..\2018\day02\Day02_2.cpp" />
     <ClCompile Include="..\Utilities\AOCHelper.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\2018\Day01\Day01_1.h" />
     <ClInclude Include="..\2018\day01\Day01_2.h" />
+    <ClInclude Include="..\2018\day02\Day02_1.h" />
+    <ClInclude Include="..\2018\day02\Day02_2.h" />
     <ClInclude Include="..\Utilities\AOCHelper.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

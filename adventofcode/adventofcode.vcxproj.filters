@@ -31,6 +31,12 @@
     <Filter Include="Header Files\2018\Day01">
       <UniqueIdentifier>{8a5c2c7d-643d-4a29-8d17-0f0721621f2c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\2018\Day02">
+      <UniqueIdentifier>{a1a91085-bf03-4e14-a8b9-78896fba3908}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2018\Day02">
+      <UniqueIdentifier>{de0af700-a76e-47d0-bf48-eba0c3462124}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -45,6 +51,12 @@
     <ClCompile Include="..\2018\day01\Day01_2.cpp">
       <Filter>Source Files\2018\Day01</Filter>
     </ClCompile>
+    <ClCompile Include="..\2018\day02\Day02_2.cpp">
+      <Filter>Source Files\2018\Day02</Filter>
+    </ClCompile>
+    <ClCompile Include="..\2018\day02\Day02_1.cpp">
+      <Filter>Source Files\2018\Day02</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\2018\Day01\Day01_1.h">
@@ -55,6 +67,12 @@
     </ClInclude>
     <ClInclude Include="..\2018\day01\Day01_2.h">
       <Filter>Header Files\2018\Day01</Filter>
+    </ClInclude>
+    <ClInclude Include="..\2018\day02\Day02_2.h">
+      <Filter>Header Files\2018\Day02</Filter>
+    </ClInclude>
+    <ClInclude Include="..\2018\day02\Day02_1.h">
+      <Filter>Header Files\2018\Day02</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
