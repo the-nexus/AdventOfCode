@@ -37,6 +37,18 @@
     <Filter Include="Source Files\2018\Day02">
       <UniqueIdentifier>{de0af700-a76e-47d0-bf48-eba0c3462124}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\2018\Day03">
+      <UniqueIdentifier>{eab1269e-6d94-4951-a0d2-ac542a6cf4eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\2018\Day03">
+      <UniqueIdentifier>{0db1ab08-cfff-4898-a995-7b6c0a3e8994}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\2018\DayN">
+      <UniqueIdentifier>{ee94dae6-1381-4f2d-ac38-3a41f2abc365}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2018\DayN">
+      <UniqueIdentifier>{380bedee-182d-4284-bd13-3f35695033de}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -57,6 +69,18 @@
     <ClCompile Include="..\2018\day02\Day02_1.cpp">
       <Filter>Source Files\2018\Day02</Filter>
     </ClCompile>
+    <ClCompile Include="..\2018\day03\Day03_1.cpp">
+      <Filter>Source Files\2018\Day03</Filter>
+    </ClCompile>
+    <ClCompile Include="..\2018\day03\Day03_2.cpp">
+      <Filter>Source Files\2018\Day03</Filter>
+    </ClCompile>
+    <ClCompile Include="..\2018\dayN\DayN_1.cpp">
+      <Filter>Source Files\2018\DayN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\2018\dayN\DayN_2.cpp">
+      <Filter>Source Files\2018\DayN</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\2018\Day01\Day01_1.h">
@@ -73,6 +97,18 @@
     </ClInclude>
     <ClInclude Include="..\2018\day02\Day02_1.h">
       <Filter>Header Files\2018\Day02</Filter>
+    </ClInclude>
+    <ClInclude Include="..\2018\day03\Day03_1.h">
+      <Filter>Header Files\2018\Day03</Filter>
+    </ClInclude>
+    <ClInclude Include="..\2018\day03\Day03_2.h">
+      <Filter>Header Files\2018\Day03</Filter>
+    </ClInclude>
+    <ClInclude Include="..\2018\dayN\DayN_1.h">
+      <Filter>Header Files\2018\DayN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\2018\dayN\DayN_2.h">
+      <Filter>Header Files\2018\DayN</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

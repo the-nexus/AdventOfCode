@@ -1,22 +1,22 @@
-#include "DayN_1.h"
+#include "Day03_2.h"
 
 
-DayN_1::DayN_1()
+Day03_2::Day03_2()
 {
 
 }
 
-DayN_1::~DayN_1()
+Day03_2::~Day03_2()
 {
 
 }
 
-bool DayN_1::SetUp(std::string const& inputFileName)
+bool Day03_2::SetUp(std::string const& inputFileName)
 {
 	return AOCHelper::ReadFile(inputFileName, m_inputLines);
 }
 
-void DayN_1::Run()
+void Day03_2::Run()
 {
 	for (size_t lineIdx = 0; lineIdx < m_inputLines.size(); ++lineIdx)
 	{
@@ -24,7 +24,7 @@ void DayN_1::Run()
 	}
 }
 
-void DayN_1::CleanUp()
+void Day03_2::CleanUp()
 {
 
 }

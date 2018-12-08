@@ -18,9 +18,9 @@ bool DayN_2::SetUp(std::string const& inputFileName)
 
 void DayN_2::Run()
 {
-	for (std::string const& line : m_inputLines)
+	for (size_t lineIdx = 0; lineIdx < m_inputLines.size(); ++lineIdx)
 	{
-		std::cout << line << std::endl;
+		std::cout << m_inputLines[lineIdx] << std::endl;
 	}
 }
 

@@ -13,7 +13,7 @@ public:
 	void CleanUp();
 
 protected:
-	bool CheckSubSolution(std::vector<int> const& indices, int const firstIndex, int const lastIndex, int& solutionIndexA, int& solutionIndexB) const;
+	bool ProcessSubSolution(std::vector<int> const& indices, int const firstIndex, int const lastIndex, int& solutionIndexA, int& solutionIndexB) const;
 
 	std::vector<std::string> m_inputLines;
 };
