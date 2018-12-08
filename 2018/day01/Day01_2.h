@@ -1,7 +1,6 @@
 #pragma once
 
 #include "../../Utilities/AOCHelper.h"
-#include <map>
 
 class Day01_2
 {

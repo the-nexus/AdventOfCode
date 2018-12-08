@@ -1,4 +1,6 @@
 #include "AOCHelper.h"
+#include <ctime>
+#include <cstdlib>
 
 
 
@@ -16,4 +18,9 @@ bool AOCHelper::ReadFile(std::string const& fileName, std::vector<std::string>& 
 	}
 
 	return false;
+}
+
+void AOCHelper::ResetRNG()
+{
+	std::srand((unsigned int)std::time(0));
 }
