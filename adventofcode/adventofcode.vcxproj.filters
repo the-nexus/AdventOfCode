@@ -49,6 +49,12 @@
     <Filter Include="Header Files\Utilities\DayN">
       <UniqueIdentifier>{0c3a9970-be02-47ce-9905-c8413ae7471e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\2018\Day04">
+      <UniqueIdentifier>{51b4aff4-42aa-49f8-b598-39e30f2c72a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2018\Day04">
+      <UniqueIdentifier>{2ff3e587-5915-4aab-8f8c-f0b4ee38bc2b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -81,6 +87,15 @@
     <ClCompile Include="..\Utilities\DayN\DayN_2.cpp">
       <Filter>Source Files\Utilities\DayN</Filter>
     </ClCompile>
+    <ClCompile Include="..\2018\day04\Day04_1.cpp">
+      <Filter>Source Files\2018\Day04</Filter>
+    </ClCompile>
+    <ClCompile Include="..\2018\day04\Day04_2.cpp">
+      <Filter>Source Files\2018\Day04</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\TimeStamp.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\2018\Day01\Day01_1.h">
@@ -109,6 +124,15 @@
     </ClInclude>
     <ClInclude Include="..\Utilities\DayN\DayN_2.h">
       <Filter>Header Files\Utilities\DayN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\2018\day04\Day04_1.h">
+      <Filter>Header Files\2018\Day04</Filter>
+    </ClInclude>
+    <ClInclude Include="..\2018\day04\Day04_2.h">
+      <Filter>Header Files\2018\Day04</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\TimeStamp.h">
+      <Filter>Header Files\Utilities</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
