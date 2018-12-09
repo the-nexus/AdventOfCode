@@ -3,7 +3,7 @@
 // Edit these to launch the proper program
 #include "../2018/day03/Day03_2.h"
 #define DayType Day03_2
-#define DayStr "../2018/Day03/Day03_input.txt"
+#define DayStr "../2018/Day04/Day03_input.txt"
 
 
 

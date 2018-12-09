@@ -13,7 +13,7 @@ Day02_2::~Day02_2()
 
 bool Day02_2::SetUp(std::string const& inputFileName)
 {
-	return AOCHelper::ReadFile(inputFileName, m_inputLines);
+	return AOCFunctionLibrary::ReadFile(inputFileName, m_inputLines);
 }
 
 void Day02_2::Run()
@@ -28,7 +28,7 @@ void Day02_2::Run()
 	}
 
 	// Reset the RNG to avoid always getting the same results when running the program
-	AOCHelper::ResetRNG();
+	AOCFunctionLibrary::ResetRNG();
 
 	// Run a divide-to-conquer algorithm by splitting the load into sub-solutions
 	int const itemsPerGroup = (int)sqrt(lineCount) + 1;
@@ -42,7 +42,7 @@ void Day02_2::Run()
 		std::cout << "Iteration #" << ++iterationCount << std::endl;
 
 		// Shuffle the indices to generate new sub-solutions to process
-		AOCHelper::ShuffleVector(inputLineIndices);
+		AOCFunctionLibrary::ShuffleVector(inputLineIndices);
 
 		int firstIndex = 0;
 		int lastIndex = itemsPerGroup < lineCount ? itemsPerGroup : lineCount;

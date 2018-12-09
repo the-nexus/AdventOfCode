@@ -43,11 +43,11 @@
     <Filter Include="Header Files\2018\Day03">
       <UniqueIdentifier>{0db1ab08-cfff-4898-a995-7b6c0a3e8994}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\2018\DayN">
-      <UniqueIdentifier>{ee94dae6-1381-4f2d-ac38-3a41f2abc365}</UniqueIdentifier>
+    <Filter Include="Source Files\Utilities\DayN">
+      <UniqueIdentifier>{122147c4-5aeb-47d6-beca-82bf5eef1788}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\2018\DayN">
-      <UniqueIdentifier>{380bedee-182d-4284-bd13-3f35695033de}</UniqueIdentifier>
+    <Filter Include="Header Files\Utilities\DayN">
+      <UniqueIdentifier>{0c3a9970-be02-47ce-9905-c8413ae7471e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -56,9 +56,6 @@
     </ClCompile>
     <ClCompile Include="..\2018\Day01\Day01_1.cpp">
       <Filter>Source Files\2018\Day01</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Utilities\AOCHelper.cpp">
-      <Filter>Source Files\Utilities</Filter>
     </ClCompile>
     <ClCompile Include="..\2018\day01\Day01_2.cpp">
       <Filter>Source Files\2018\Day01</Filter>
@@ -75,19 +72,19 @@
     <ClCompile Include="..\2018\day03\Day03_2.cpp">
       <Filter>Source Files\2018\Day03</Filter>
     </ClCompile>
-    <ClCompile Include="..\2018\dayN\DayN_1.cpp">
-      <Filter>Source Files\2018\DayN</Filter>
+    <ClCompile Include="..\Utilities\AOCFunctionLibrary.cpp">
+      <Filter>Source Files\Utilities</Filter>
     </ClCompile>
-    <ClCompile Include="..\2018\dayN\DayN_2.cpp">
-      <Filter>Source Files\2018\DayN</Filter>
+    <ClCompile Include="..\Utilities\DayN\DayN_1.cpp">
+      <Filter>Source Files\Utilities\DayN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utilities\DayN\DayN_2.cpp">
+      <Filter>Source Files\Utilities\DayN</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\2018\Day01\Day01_1.h">
       <Filter>Header Files\2018\Day01</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Utilities\AOCHelper.h">
-      <Filter>Header Files\Utilities</Filter>
     </ClInclude>
     <ClInclude Include="..\2018\day01\Day01_2.h">
       <Filter>Header Files\2018\Day01</Filter>
@@ -104,11 +101,14 @@
     <ClInclude Include="..\2018\day03\Day03_2.h">
       <Filter>Header Files\2018\Day03</Filter>
     </ClInclude>
-    <ClInclude Include="..\2018\dayN\DayN_1.h">
-      <Filter>Header Files\2018\DayN</Filter>
+    <ClInclude Include="..\Utilities\AOCFunctionLibrary.h">
+      <Filter>Header Files\Utilities</Filter>
     </ClInclude>
-    <ClInclude Include="..\2018\dayN\DayN_2.h">
-      <Filter>Header Files\2018\DayN</Filter>
+    <ClInclude Include="..\Utilities\DayN\DayN_1.h">
+      <Filter>Header Files\Utilities\DayN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utilities\DayN\DayN_2.h">
+      <Filter>Header Files\Utilities\DayN</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -13,14 +13,14 @@ Day03_1::~Day03_1()
 
 bool Day03_1::SetUp(std::string const& inputFileName)
 {
-	return AOCHelper::ReadFile(inputFileName, m_inputLines);
+	return AOCFunctionLibrary::ReadFile(inputFileName, m_inputLines);
 }
 
 void Day03_1::Run()
 {
 	int const fabricWidth = 1000;
 	int const fabricHeight = 1000;
-	int** fabricUsage = AOCHelper::CreateDoubleArray<int>(fabricWidth, fabricHeight, 0);
+	int** fabricUsage = AOCFunctionLibrary::CreateDoubleArray<int>(fabricWidth, fabricHeight, 0);
 
 	for (size_t lineIndex = 0; lineIndex < m_inputLines.size(); ++lineIndex)
 	{
@@ -57,7 +57,7 @@ void Day03_1::Run()
 	}
 	std::cout << "Answer: " << overlappingClaims << std::endl;
 
-	AOCHelper::DestroyDoubleArray(fabricUsage, fabricHeight);
+	AOCFunctionLibrary::DestroyDoubleArray(fabricUsage, fabricHeight);
 }
 
 void Day03_1::CleanUp()
@@ -71,9 +71,9 @@ void Day03_1::ParseInputString(std::string const& inputString, int& outId, int& 
 	std::vector<std::string> pos;
 	std::vector<std::string> size;
 
-	AOCHelper::SplitString(inputString, " ", args);
-	AOCHelper::SplitString(args[2], ",", pos);
-	AOCHelper::SplitString(args[3], "x", size);
+	AOCFunctionLibrary::SplitString(inputString, " ", args);
+	AOCFunctionLibrary::SplitString(args[2], ",", pos);
+	AOCFunctionLibrary::SplitString(args[3], "x", size);
 
 	outId = stoi(args[0].substr(1, args[0].size() - 1));
 	outX = stoi(pos[0]);

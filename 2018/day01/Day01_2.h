@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../../Utilities/AOCHelper.h"
+#include "../../Utilities/AOCFunctionLibrary.h"
 
 class Day01_2
 {

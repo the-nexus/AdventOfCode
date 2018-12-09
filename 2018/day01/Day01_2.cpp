@@ -13,7 +13,7 @@ Day01_2::~Day01_2()
 
 bool Day01_2::SetUp(std::string const& inputFileName)
 {
-	return AOCHelper::ReadFile(inputFileName, m_inputLines);
+	return AOCFunctionLibrary::ReadFile(inputFileName, m_inputLines);
 }
 
 void Day01_2::Run()
