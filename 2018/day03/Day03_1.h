@@ -13,5 +13,7 @@ public:
 	void CleanUp();
 
 protected:
+	void ParseInputString(std::string const& inputString, int& outId, int& outX, int& outY, int& outWidth, int& outHeight) const;
+
 	std::vector<std::string> m_inputLines;
 };

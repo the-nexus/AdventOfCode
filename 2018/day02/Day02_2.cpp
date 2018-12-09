@@ -19,9 +19,10 @@ bool Day02_2::SetUp(std::string const& inputFileName)
 void Day02_2::Run()
 {
 	// Handle everything has indices of the lines to use to lighten the processing load
+	int lineCount = (int)m_inputLines.size();
 	std::vector<int> inputLineIndices;
-	inputLineIndices.resize(m_inputLines.size());
-	for (size_t index = 0; index < inputLineIndices.size(); ++index)
+	inputLineIndices.resize(lineCount);
+	for (int index = 0; index < lineCount; ++index)
 	{
 		inputLineIndices[index] = index;
 	}
@@ -30,7 +31,7 @@ void Day02_2::Run()
 	AOCHelper::ResetRNG();
 
 	// Run a divide-to-conquer algorithm by splitting the load into sub-solutions
-	int const itemsPerGroup = (int)sqrt(m_inputLines.size()) + 1;
+	int const itemsPerGroup = (int)sqrt(lineCount) + 1;
 	bool foundSolution = false;
 	int solutionIndexA = 0;
 	int solutionIndexB = 0;
@@ -44,7 +45,7 @@ void Day02_2::Run()
 		AOCHelper::ShuffleVector(inputLineIndices);
 
 		int firstIndex = 0;
-		int lastIndex = itemsPerGroup < (int)inputLineIndices.size() ? itemsPerGroup : inputLineIndices.size();
+		int lastIndex = itemsPerGroup < lineCount ? itemsPerGroup : lineCount;
 		while (firstIndex < lastIndex)
 		{
 			// Process the current sub-solution
@@ -57,7 +58,7 @@ void Day02_2::Run()
 
 			firstIndex = lastIndex;
 			lastIndex += itemsPerGroup;
-			lastIndex = lastIndex < (int)inputLineIndices.size() ? lastIndex : inputLineIndices.size();
+			lastIndex = lastIndex < lineCount ? lastIndex : lineCount;
 		}
 	}
 
